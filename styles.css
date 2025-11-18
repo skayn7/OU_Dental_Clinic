@@ -1,0 +1,113 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+}
+
+header .nav-links {
+    list-style: none;
+    float: right;
+}
+
+header .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero .hero-content button {
+    background-color: #ff6f61;
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#about, #services, #testimonials, #contact {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#services .service-card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#services .service-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#testimonials .testimonial {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+    }
+    header .nav-links.active {
+        display: block;
+        text-align: center;
+    }
+
+    #services .service-card {
+        width: 100%;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+}
